@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org">
+	<head>
+		<title>ubah fly hour</title>
+	</head>
+	<body>
+		<h2>Pilot Berhasil Dihapus</h2>
+		<h3 th:text="${pilot.id}"></h3>
+		<h3 th:text="${pilot.licenseNumber}"></h3>
+		<h3 th:text="${pilot.name}"></h3>
+		<h3 th:text="${pilot.flyHour}"></h3>
+		<h2>Daftar Pilot</h2>
+		<div th:each="pilot : ${listPilot}">
+			<h3 th:text="${pilot.id}"></h3>
+			<h3 th:text="${pilot.licenseNumber}"></h3>
+			<h3 th:text="${pilot.name}"></h3>
+			<h3 th:text="${pilot.flyHour}"></h3>
+		</div>
+	</body>
+</html>
